@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path='/Forms' element = {<Forms takeData = {getData}/>}/>
+        <Route path='/' element = {<Forms takeData = {getData}/>}/>
         <Route path='/DataTable' element = {<DataTable sendData = {formData}/>} />
       </Routes>
     </div>
