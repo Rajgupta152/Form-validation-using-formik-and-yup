@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Forms from './components/Forms';
+import DataTable from './components/DataTable';
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router';
 
 function App() {
+  const [formData, setFormData] = useState([]);
+  const getData = (data) => {
+    // console.log(data);
+    setFormData(data)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Routes>
+        <Route path='/Forms' element = {<Forms takeData = {getData}/>}/>
+        <Route path='/DataTable' element = {<DataTable sendData = {formData}/>} />
+      </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

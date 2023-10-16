@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -36,3 +39,53 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper{
+  margin: 50px;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.input-wrapper{
+  margin-top: 30px;
+}
+.input-wrapper .text-field{
+  width: 400px;
+}
+.btn-group{
+  margin-top: 30px;
+}
+.custom-input-font-color {
+  color: #ff5733; /* Your custom font color */
+}
+.navbar-wrapper{
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+Link{
+  text-decoration: none;
+  color: #fff;
+}
+.table-wrapper{
+  width: 80%;
+  background-color: black;
+}
+.navbar{
+  display: flex;
+  gap: 100px;
+}
+
+
+
+
